@@ -19,7 +19,7 @@ msbuild brutal.sln /p:Configuration=Release /p:Platform=x64
 Load the driver (`sc create` or `devcon`), then use `ctl`:
 
 ```
-ctl add 56278     hide port 56278
+ctl add 56278     hide port 8080
 ctl add 443       hide port 443
 ctl list          show all hidden ports
 ctl del 443       unhide port 443
